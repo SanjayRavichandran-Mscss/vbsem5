@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>arithmetic</title>
+</head>
+<body>
+    <p>
+        Public Class Form1<br>
+
+
+        Private Sub button_Click(sender As Object, e As EventArgs) Handles btn1.Click, btn2.Click, btn3.Click, btn4.Click, btn5.Click, btn6.Click, btn7.Click, btn8.Click, btn9.Click, btncalculate.Click, btnclear.Click, btndivide.Click, btndot.Click, btnminus.Click, btnmultiple.Click, btnplus.Click<br>
+            Dim button As Button = CType(sender, Button)<br>
+           
+    
+            If button.Name = "btn1" <br>
+                RichTextBox1.Text = RichTextBox1.Text + "1"<br>
+            End If<br>
+    
+            If button.Name = "btn2" Then<br>
+                RichTextBox1.Text = RichTextBox1.Text + "2"<br>
+            End If<br>
+    
+            If button.Name = "btn3" Then<br>
+                RichTextBox1.Text = RichTextBox1.Text + "3"<br>
+            End If<br>
+    
+            If button.Name = "btn4" Then<br>
+                RichTextBox1.Text = RichTextBox1.Text + "4"<br>
+            End If<br>
+    
+            If button.Name = "btn5" Then<br>
+                RichTextBox1.Text = RichTextBox1.Text + "5"<br>
+            End If<br>
+    
+            If button.Name = "btn6" Then<br>
+                RichTextBox1.Text = RichTextBox1.Text + "6"<br>
+            End If<br>
+    
+            If button.Name = "btn7" Then<br>
+                RichTextBox1.Text = RichTextBox1.Text + "7"<br>
+            End If<br>
+    
+            If button.Name = "btn8" Then<br>
+                RichTextBox1.Text = RichTextBox1.Text + "8"<br>
+            End If<br>
+    
+            If button.Name = "btn9" Then<br>
+                RichTextBox1.Text = RichTextBox1.Text + "9"<br>
+            End If<br>
+    
+            If button.Name = "btn0" Then<br>
+                RichTextBox1.Text = RichTextBox1.Text + "0"<br>
+            End If<br>
+    
+            If button.Name = "btnclear" Then<br>
+                RichTextBox1.Text = RichTextBox1.Text + " "<br><br>
+            End If<br>
+    
+            If button.Name = "btndot" Then<br>
+                RichTextBox1.Text = RichTextBox1.Text + "."<br>
+            End If<br>
+    
+            If button.Name = "btndivide" Then<br>
+                RichTextBox1.Text = RichTextBox1.Text + "/"<br>
+            End If<br>
+    
+           
+            If button.Name = "btnmultiple" Then<br>
+                RichTextBox1.Text = RichTextBox1.Text + "*"<br>
+            End If<br>
+    
+            If button.Name = "btnplus" Then<br>
+                RichTextBox1.Text = RichTextBox1.Text + "+"<br>
+            End If<br>
+            <br>
+    
+            If button.Name = "btnminus" Then<br>
+                RichTextBox1.Text = RichTextBox1.Text + "-"<br>
+            End If<br>
+    
+            If button.Name = "btncalculate" Then<br>
+                Dim str As String = RichTextBox1.Text<br>
+                Dim result = New DataTable().Compute(str, Nothing)<br>
+                RichTextBox1.Text = result<br>
+            End If<br>
+    
+            If button.Name = "btnclear" Then<br>
+                RichTextBox1.Text = " "<br>
+            End If<br>
+    
+        End Sub <br>
+    End Class <br>
+    
+
+    </p>
+</body>
+</html>

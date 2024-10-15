@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>employee</title>
+</head>
+<body>
+    <p>
+        Public Class Form1 <br>
+
+        Private Sub btn_clear_Click(sender As Object, e As EventArgs) Handles btn_clear.Click <br>
+            Me.txt_allowance.Text = " " <br>
+            Me.txt_empid.Text = " " <br>
+            Me.txt_empname.Text = " " <br>
+            Me.txt_epfamount.Text = " " <br>
+            Me.txt_gpay.Text = " " <br>
+            Me.txt_netpay.Text = " " <br>
+            Me.txt_Bp.Text = " " <br>
+            Me.txt_desig.Text = " " <br>
+    
+        End Sub <br>
+    
+    
+    
+        Private Sub btn_calculate_Click(sender As Object, e As EventArgs) Handles btn_calculate.Click <br>
+    
+            If chk_percentage.Checked = True Then <br>
+                txt_epfamount.Text = Val(txt_Bp.Text) * 10 / 100 <br>
+            End If <br>
+    
+            If Val(txt_Bp.Text) > 50000 Then <br>
+                txt_allowance.Text = 1500 <br>
+            Else <br>
+                txt_allowance.Text = 500 <br>
+            End If <br>
+            txt_gpay.Text = Val(txt_Bp.Text) + Val(txt_allowance.Text) <br>
+            txt_netpay.Text = Val(txt_Bp.Text) - Val(txt_epfamount.Text) + Val(txt_allowance.Text) <br>
+        End Sub <br>
+    
+        Private Sub btn_Exit_Click(sender As Object, e As EventArgs) Handles btn_Exit.Click <br>
+            End <br>
+        End Sub <br>
+    End Class <br>
+    
+
+    </p>
+</body>
+</html>

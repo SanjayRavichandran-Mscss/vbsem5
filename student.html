@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>student</title>
+</head>
+<body>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>student</title>
+    </head>
+    <body>
+        <p>
+
+            Public Class Form1<br>
+
+   
+
+            Private Sub btn_calc_Click(sender As Object, e As EventArgs) Handles btn_calc.Click<br>
+                txt_tot.Text = Val(txt_m1.Text) + Val(txt_m2.Text) + Val(txt_m3.Text) + Val(txt_m4.Text) + Val(txt_m5.Text)<br>
+                txt_avg.Text = Val(txt_tot.Text) / 5<br>
+            End Sub<br>
+        
+            Private Sub btn_exit_Click(sender As Object, e As EventArgs) Handles btn_exit.Click<br>
+                End<br>
+            End Sub<br>
+        
+            Private Sub btn_clr_Click(sender As Object, e As EventArgs) Handles btn_clr.Click<br>
+                Me.TextBox1.Text = " "<br>
+                Me.TextBox2.Text = " "<br>
+                Me.TextBox3.Text = " "<br>
+                Me.TextBox4.Text = " "<br>
+                Me.TextBox5.Text = " "<br>
+                Me.TextBox6.Text = " "<br>
+                Me.TextBox7.Text = " "<br>
+                Me.txt_m1.Text = " "<br>
+                Me.txt_m2.Text = " "<br>
+                Me.txt_m3.Text = " "<br>
+                Me.txt_m3.Text = " "<br>
+                Me.txt_m4.Text = " "<br>
+                Me.txt_m5.Text = " "<br>
+                Me.txt_tot.Text = " "<br>
+                Me.txt_avg.Text = " "<br>
+            End Sub<br>
+        
+            'below codes are some error<br>
+            Private Sub txt_num_TextChanged(sender As Object, e As EventArgs) Handles txt_m1.TextChanged, txt_m2.TextChanged, txt_m3.TextChanged, txt_m4.TextChanged, txt_m5.TextChanged, TextBox7.TextChanged, TextBox4.TextChanged, TextBox1.TextChanged, TextBox5.TextChanged<br>
+                If Not IsNumeric(TextBox2.Text) Then<br>
+                    MsgBox("number only")<br>
+                End If<br>
+            End Sub<br>
+        
+            Private Sub txt_name_TextChanged(sender As Object, e As EventArgs) Handles TextBox2.TextChanged, TextBox3.TextChanged, TextBox6.TextChanged<br>
+                If IsNumeric(txt_m1.Text) Then<br>
+                    MsgBox("character only")<br>
+                End If<br>
+            End Sub<br>
+        End Class  <br>
+            
+        </p>
+    </body>
+    </html>
+</body>
+</html>
