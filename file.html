@@ -13,7 +13,7 @@ Private sub button1.click(sender As Object, e As EventArgs) Handles<br>
 button1.Click<br>
 Dim filepath as string = “COPIED PATH OF THE TEXTFILE”<br>
 Dim filecontent as string =Textbox1.text<br>
-File.WriteAllText (filepath, filecontent)<br>
+system.IO.File.WriteAllText (filepath, filecontent)<br>
 Messagebox.Show (“File successfully inserted”)<br>
 End Sub<br>
 End Class<br>
